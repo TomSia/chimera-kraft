@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local"
+import { Geist, Geist_Mono, Besley} from "next/font/google";
 import "./globals.css";
+
+const blackChancery = localFont({
+  src: './fonts/BLKCHCRY.ttf',
+  variable: '--font-blackChancery',
+})
+
+const besley = Besley({
+  variable: "--font-besley",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
